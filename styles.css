@@ -1,0 +1,268 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* 容器 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* 头部样式 */
+header {
+    padding: 150px 0 100px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* 分区标题 */
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+section h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    margin: 20px auto 0;
+}
+
+/* 个人简介 */
+#intro .profile-photo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#intro .profile-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#intro .profile-photo img:hover {
+    transform: scale(1.05);
+}
+
+#intro ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#intro ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 教育和工作经验 */
+#education,
+#work-experience {
+    padding: 100px 0;
+}
+
+#education h3,
+#work-experience h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#education p,
+#work-experience p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#education ul,
+#work-experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#education ul li,
+#work-experience ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* 项目列表 */
+#projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects ul li {
+    font-size: 18px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+#projects ul li a {
+    display: block;
+    padding: 40px 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #f2f2f2;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#projects ul li a:hover {
+    background-color: #e0e0e0; /* 鼠标悬停时背景变深 */
+    color: #000;
+}
+
+#projects ul li a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; /* 调整为左侧开始 */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* 初始为透明 */
+    transition: background-color 0.3s ease;
+    z-index: -1;
+}
+
+#projects ul li a:hover:after {
+    background-color: rgba(0, 0, 0, 0.1); /* 鼠标悬停时背景覆盖变深 */
+}
+
+/* 联系方式 */
+#contact p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#contact ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 14px;
+    color: #777777;
+}
+
+/* 细节和其他 */
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 50px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    #intro .profile-photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #intro ul li,
+    #contact ul li {
+        font-size: 16px;
+    }
+
+    #projects ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects ul li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #projects ul li a {
+        width: 100%;
+        padding: 30px;
+    }
+}
+.project-image {
+    width: 1200px;               /* 设置固定宽度 */
+    height: auto;                /* 高度自动调整，保持图片比例 */
+    margin-bottom: 20px;         /* 图片之间的间隔 */
+    border: 5px solid rgba(0, 0, 0, 0.1);  /* 半透明灰色边框 */
+    border-radius: 10px;         /* 可选：给图片外框添加圆角 */
+    box-sizing: border-box;      /* 确保边框不影响整体尺寸 */
+}
+
+.project-image:hover {
+    border-color: rgba(0, 0, 0, 0.3);  /* 鼠标悬停时边框颜色变深 */
+}
