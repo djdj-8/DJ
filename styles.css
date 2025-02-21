@@ -255,12 +255,21 @@ hr {
     }
 }
 .project-image {
-    width: 1200px;               /* 设置固定宽度 */
-    height: auto;                /* 高度自动调整，保持图片比例 */
-    margin-bottom: 20px;         /* 图片之间的间隔 */
+    width: 100%;                /* 设置为 100% 宽度 */
+    max-width: 1200px;          /* 最大宽度为 1200px，确保在大屏幕上不会过大 */
+    height: auto;               /* 高度自动调整，保持图片比例 */
+    margin-bottom: 20px;        /* 图片之间的间隔 */
     border: 5px solid rgba(0, 0, 0, 0.1);  /* 半透明灰色边框 */
-    border-radius: 10px;         /* 可选：给图片外框添加圆角 */
-    box-sizing: border-box;      /* 确保边框不影响整体尺寸 */
+    border-radius: 10px;        /* 可选：给图片外框添加圆角 */
+    box-sizing: border-box;     /* 确保边框不影响整体尺寸 */
+}
+
+/* 响应式设计：对于手机端 */
+@media (max-width: 768px) {
+    .project-image {
+        width: 100%;            /* 确保图片占据屏幕宽度 */
+        max-width: none;        /* 在手机上不限制最大宽度 */
+    }
 }
 
 .project-image:hover {
