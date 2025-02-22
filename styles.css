@@ -275,3 +275,19 @@ hr {
 .project-image:hover {
     border-color: rgba(0, 0, 0, 0.3);  /* 鼠标悬停时边框颜色变深 */
 }
+/* 视频样式 */
+video {
+    width: 100%;              /* 确保视频宽度占满容器 */
+    max-width: 100%;          /* 防止视频在大屏幕上超出容器 */
+    height: auto;             /* 保持视频比例 */
+    border-radius: 10px;      /* 可选：添加圆角效果 */
+    box-sizing: border-box;   /* 确保视频尺寸包含边框 */
+}
+
+/* 响应式设计：对于手机端 */
+@media (max-width: 768px) {
+    video {
+        width: 100%;            /* 确保视频占据手机屏幕宽度 */
+        max-width: none;        /* 在手机上不限制最大宽度 */
+    }
+}
