@@ -5,3 +5,5 @@ images/Bad[[:space:]]Luck[[:space:]]Space封面p.jpg filter=lfs diff=lfs merge=l
 images/EPM封面p.jpg filter=lfs diff=lfs merge=lfs -text
 images/Flexarket01p.jpg filter=lfs diff=lfs merge=lfs -text
 images/Flexarket02p.jpg filter=lfs diff=lfs merge=lfs -text
+images/ECLIPSED[[:space:]]EDEN3.jpg filter=lfs diff=lfs merge=lfs -text
+images/ECLIPSED[[:space:]]EDEN4.jpg filter=lfs diff=lfs merge=lfs -text
