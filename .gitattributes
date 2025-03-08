@@ -1,3 +1,7 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+images/Bad[[:space:]]Luck[[:space:]]Space封面p.jpg filter=lfs diff=lfs merge=lfs -text
+images/EPM封面p.jpg filter=lfs diff=lfs merge=lfs -text
+images/Flexarket01p.jpg filter=lfs diff=lfs merge=lfs -text
+images/Flexarket02p.jpg filter=lfs diff=lfs merge=lfs -text
